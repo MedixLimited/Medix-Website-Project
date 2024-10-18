@@ -1,56 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medix Health Limited</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>MEDIX Health Limited</title>
+    <link rel="icon" href="LOGO.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
+
+    <header class="main-header">
+        <div class="header">
             <div class="logo">
-                <img alt="Company Logo" height="40" src="MDX.png" width="40">
-                <span>MEDIX Health Limited</span>
+                <img class="imgLogo" src="LOGO.png">
+                <h1 class="logoTxt">MEDIX Health Limited</h1>
             </div>
-            <div class="nav-links">
-                <a href="#">ABOUT</a>
-                <a href="#">AI'S</a>
-                <a href="#">MISSION</a>
-                <a href="#">SOLUTIONS</a>
-            </div>
-        </nav>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">MISSION</a></li>
+                    <li><a href="#">AI</a></li>
+                    <li><a href="#">SOLUTIONS</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <img alt="Doctor operating a robotic surgical system" height="500" src="fundo.png" width="957">
-            <div class="overlay"></div>
-            <div class="content">
-                <h1>Welcome to Medix</h1>
-                <p>Innovation in Health through Artificial Intelligence</p>
-                <a class="btn" href="#">TEST OUR AI</a>
-            </div>
-        </section>
+    <section class="hero">
+        <div class="centroPrincipal">
+            <h2>Welcome to Medix </h2>
+            <p>Innovation in Health through Artificial Intelligence.</p>
+            <a href="#" class="cta-btn">Test our AI</a>
+        </div>
+    </section>
 
-        <section class="about">
-            <h2 class="about-title">ABOUT</h2>
-            <div class="about-content">
-                <div class="box">
-                    <img alt="Placeholder image" height="100" src="MDXArvore.png" width="100">
+    <section class="services">
+        <div class="sobreNos">
+            <h3>ABOUT</h3>
+            <div class="service-box">
+                <div class="service-item">
+                    <img alt="Placeholder image" height="100" src="R (3).jpeg" width="100">
                     <h3 class="title">ABOUT US</h3>
                     <p class="content">At Medix, our mission is to transform the healthcare experience. With a dedicated team of qualified professionals, we offer innovative solutions with AI, always prioritizing the well-being of our patients.</p>
                 </div>
-                <div class="box">
-                    <img alt="Placeholder image" height="100" src="Robo.jpg" width="100">
+                <div class="service-item">
+                    <img alt="Placeholder image" height="100" src="R (3).jpeg" width="100">
                     <h3 class="title">HOW THE IDEA AROSE?</h3>
                     <p class="content">We conducted a survey of health professionals to find out the most common problems in surgery and their causes, and based on this we came up with this idea.</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section class="mission">
+        <div class="misON">
+            <h3 class="titMis">MISSION</h3>
+            <p class="txtMis">Introduction to the Problem</p>
+            <p class="txtMis2">
+                Robotic surgery is a great option for any surgery, as it is much less invasive and less risky, but it still has its problems. The problems that occur in robotic surgery are usually mistakes that the surgeon himself makes, either through lack of proper training or inexperience. In most cases, the mistakes that happen are made by surgeons.
+            </p>
+        </div>
+
+        <div class="misON2">
+            <img class="imgMis" src="pexels-cottonbro-6153343.jpg" alt="Descrição da imagem">
+            <div class="txtMis3">
+                <h3 class="tilMis">Our Solution</h3>
+                <p class="pTxt">
+                    These mistakes are simple and easy to avoid. We thought of solving these medical errors with an AI that recognizes any movement, no matter how small, thus avoiding the mistakes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="ourAI">
+        <div class="ai">
+            <h3 class="titAi">AI</h3>
+            <div class="txtAIz">
+                <p class="txtAi">Our idea of AI was: an AI that senses and controls every movement, no matter how small, thus avoiding the basic errors of robotic surgery. With this, we believe that our AI would help a lot in robotic surgeries.</p>
+                <p class="txtAi2">Click on the button below to see our idea for AI, the future of robotic medicine.</p>
+                <button class="btnAI">TEST</button>
+            </div>    
+        </div>    
+        <div class="imgAIc">
+                <img class="imgAi" src="ai-chip-artificial-intelligence-future-technology-innovation.jpg">
+        </div>
+
+    </section>
+    
+    
+
+    <footer class="main-footer">
+        <div class="footer">
+            <p>&copy; 2024 Empresa Criativa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
