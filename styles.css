@@ -7,7 +7,7 @@
  
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #333;
 }
  
@@ -135,20 +135,22 @@ body {
     flex-wrap: wrap;
 }
  
-.service-item {
+.service-item{
     width: 30%;
     background-color: rgba(181, 199, 214, 1);
     border-radius: 20px;
     padding: 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    animation: fadeIn 2s ease-in-out;
+    opacity: 0; /* Inicia invisível */
+    transform: translateX(-100px); /* Inicia fora da tela à esquerda */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transição suave */
 }
  
-.service-item:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+.service-item.animate {
+    opacity: 1; /* Torna visível */
+    transform: translateX(0); /* Move para a posição final */
 }
+ 
  
 .service-item h4 {
     font-size: 1.8em;
@@ -165,20 +167,27 @@ body {
 /* MISSÂO */
 .mission {
     background-color: #ffffff;
-    padding: 250px 20px;
+    padding: 50px 20px;
 }
  
 .misON {
     margin: 0 auto;
     padding: 20px 0;
+    opacity: 0; /* Inicia invisível */
+    transform: translateX(100px); /* Inicia fora da tela à esquerda */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transição suave */
 }
  
+.misON.animate {
+    opacity: 1; /* Torna visível */
+    transform: translateX(0);
+}
 .titMis {
     font-size: 2em;
     color: #333333;
     font-weight: 600;
     margin-bottom: 15px;
-    text-align: center;
+    text-align: left;
 }
  
 .txtMis {
@@ -198,8 +207,18 @@ body {
 .misON2 {
     display: flex;
     align-items: flex-start;
-    margin-top: 150px auto;
+    /*margin: 20px auto;*/
+    width: 80vw;
+    opacity: 0; /* Inicia invisível */
+    transform: translateX(-100px); /* Inicia fora da tela à esquerda */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transição suave */
 }
+ 
+.misON2.animate {
+    opacity: 1; /* Torna visível */
+    transform: translateX(0); /* Move para a posição final */
+}
+ 
  
 .imgMis {
     width: 471px;
@@ -210,11 +229,12 @@ body {
 }
  
 .txtMis3 {
+    font-size: 1.2em;
+    margin-top: 125px;
     flex: 1;
 }
  
 .tilMis {
-    margin-top: 120px;
     font-size: 1.8em;
     color: #333;
     margin-bottom: 10px;
@@ -233,8 +253,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    opacity: 0; /* Inicia invisível */
+    transform: translateX(100px); /* Inicia fora da tela à esquerda */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transição suave */
 }
  
+.ourAI.animate{
+    background-color: #ffffff;
+    opacity: 1; /* Torna visível */
+    transform: translateX(0); /* Move para a posição final */
+}
 .ai {
     flex: 1;
     margin-right: 20px;
@@ -268,11 +296,9 @@ body {
 }
  
 .btnAI {
-    font-size: 1.3em;
-    font-family: 'Poppins', sans-serif;
-    animation: pulse 2s infinite;
-    width: 215px;
-    height: 80px;
+    margin-top: 53px;
+    width: 190px;
+    height: 64px;
     background: #3494AD;
     border-radius: 40px; /* Ajuste do border-radius para ficar mais sutil */
     color: white; /* Cor do texto */
@@ -355,3 +381,7 @@ body {
         background-position: 100% 100%;
     }
 }
+ 
+ 
+ 
+ 
