@@ -220,7 +220,7 @@ body {
 .misON2 {
     display: flex;
     align-items: flex-start;
-    width: 80vw;
+    width: 93vw;
     opacity: 0; /* Inicia invisível */
     transform: translateX(-100px); /* Inicia fora da tela à esquerda */
     transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out; /* Transição mais rápida e suave */
@@ -233,8 +233,8 @@ body {
  
  
 .imgMis {
-    width: 471px;
-    height: 471px;
+    width: 444px;
+    height: 400px;
     border-radius: 15%;
     object-fit: cover;
     margin-right: 100px;
