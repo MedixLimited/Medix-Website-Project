@@ -116,52 +116,56 @@ body {
 }
  
 /* Services Section */
-.services {
+.about {
     background-color: #fff;
     padding: 80px 0;
     text-align: center;
 }
- 
-.services h3 {
+
+.about h3 {
     font-size: 3em;
     margin-bottom: 50px;
-    animation: fadeIn 1.5s ease-in-out;
 }
- 
-.service-box {
+
+.about-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    overflow-x: auto; /* Habilita o scroll horizontal */
+    padding: 20px;
+    scrollbar-width: thin; /* Para navegadores compatíveis */
 }
- 
-.service-item{
-    width: 30%;
+
+.about-card {
+    flex: 0 0 auto; /* Impede que os cards encolham */
+    width: 250px; /* Largura fixa dos cards */
+    margin: 0 15px; /* Espaçamento entre os cards */
     background-color: rgba(181, 199, 214, 1);
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    opacity: 0; /* Inicia invisível */
-    transform: translateX(-100px); /* Inicia fora da tela à esquerda */
-    transition: transform 0.35s ease, opacity 0.35s ease; /* Transição suave */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
 }
- 
-.service-item.animate {
-    opacity: 1; /* Torna visível */
-    transform: translateX(0); /* Move para a posição final */
+
+.about-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
- 
- 
-.service-item h4 {
-    font-size: 1.8em;
-    color: #00bfa5;
-    margin-bottom: 20px;
+
+.about-card h4 {
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+    color: #333;
 }
- 
-.service-item p {
-    color: #ffffff;
-    font-size: 1.1em;
-    line-height: 1.6;
+
+.about-card p {
+    color: #555;
 }
+
+/* Efeito de hover */
+.about-card:hover {
+    transform: scale(1.05);
+}
+
  
 /* MISSÂO */
 .mission {
@@ -225,6 +229,7 @@ body {
     border-radius: 15%;
     object-fit: cover;
     margin-right: 100px;
+    margin-top: 50px;
 }
  
 .txtMis3 {
@@ -329,15 +334,37 @@ body {
     background-color: #222;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
-    width: 100%;
+    padding: 40px 20px;
 }
- 
-.main-footer p {
-    margin: 0;
-    font-size: 1em;
-    color: #bbb;
+
+.email{
+    color: #ffffff;
 }
+
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h4 {
+    margin: 10px 0;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.twitter-button {
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.twitter-button:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
  
 /* Animations */
 @keyframes fadeIn {
