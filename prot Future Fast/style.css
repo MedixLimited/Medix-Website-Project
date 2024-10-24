@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: space-between; /* Distribui logo e navegação */
     align-items: center; /* Alinha itens verticalmente no centro */
-    padding: 20px;
+    padding: 13px;
 }
  
 .logo {
@@ -80,9 +80,9 @@ body {
     background: url('Design\ sem\ nome.png') no-repeat center center/cover;
     color: #fff;
     text-align: center;
-    padding: 150px 0;
+    padding: 240px 0;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
-    height: 100vh;
+    height: 104vh;
     animation: parallaxScroll 10s infinite linear;
 }
  
@@ -172,14 +172,18 @@ body {
     background-color: #ffffff; 
 }
 
+.pagina_inicial{
+    background-color: #000000;
+}
+
 .misON {
-    margin: 0 auto;
+    margin-top: 100px;
     transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out; /* Transição mais rápida e suave */
     background-image: url(ondinha.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 507px;
+    min-height: 550px;
     padding: 52px;
 }
 
@@ -189,7 +193,7 @@ body {
 }
 
 .titMis {
-    font-size: 2em;
+    font-size: 3em;
     color: #ffffff;
     font-weight: 600;
     margin-bottom: 15px;
@@ -197,14 +201,14 @@ body {
 }
  
 .txtMis {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #ffffff;
     margin-bottom: 10px;
     text-align: left;
 }
  
 .txtMis2 {
-    font-size: 1em;
+    font-size: 1.2em;
     color: #e5e5e5;
     line-height: 1.6;
     text-align: left;
@@ -224,6 +228,7 @@ body {
     opacity: 0; /* Inicia invisível */
     transform: translateX(-100px); /* Inicia fora da tela à esquerda */
     transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out; /* Transição mais rápida e suave */
+    margin-top: 300px;
 }
 
 .misON2.animate {
@@ -242,13 +247,13 @@ body {
 }
  
 .txtMis3 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-top: 125px;
     flex: 1;
 }
  
 .tilMis {
-    font-size: 1.8em;
+    font-size: 2em;
     color: #333;
     margin-bottom: 10px;
 }
@@ -262,7 +267,7 @@ body {
 /*AI*/
 .ourAI {
     background-color: #ffffff;
-    padding: 50px 20px;
+    padding: 50px 37px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -281,7 +286,7 @@ body {
 }
  
 .titAi {
-    font-size: 2em;
+    font-size: 3em;
     color: #333333;
     font-weight: 600;
     margin-bottom: 15px;
@@ -294,14 +299,14 @@ body {
 }
  
 .txtAi {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #555555;
     margin-bottom: 10px;
     max-width: 573px; /* Adicionado para limitar a largura */
 }
  
 .txtAi2 {
-    font-size: 1em;
+    font-size: 1.2em;
     color: #666666;
     line-height: 1.6;
     max-width: 572px; /* Adicionado para limitar a largura */
