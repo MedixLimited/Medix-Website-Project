@@ -1,16 +1,15 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+ 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #333;
 }
-
+ 
 .centroPrincipal {
     width: 90%;
     max-width: 1200px;
@@ -19,21 +18,21 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
+ 
 /* Header */
-
+ 
 .header {
     display: flex;
     justify-content: space-between; /* Distribui logo e navegação */
     align-items: center; /* Alinha itens verticalmente no centro */
     padding: 20px;
 }
-
+ 
 .logo {
     display: flex;
     align-items: center; /* Alinha logo e texto lado a lado */
 }
-
+ 
 .imgLogo {
     width: 60px;
     height: 60px;
@@ -41,41 +40,41 @@ body {
     object-fit: cover; /* Garante que a imagem se ajuste ao círculo */
     margin-right: 15px; /* Espaço entre a logo e o texto */
 }
-
+ 
 .main-header {
     background-color: #ffffff;
     color: #000000;
     width: 100%;
 }
-
+ 
 .logoTxt {
     font-size: 1.8em;
     font-weight: 600;
     color: #000000;
 }
-
+ 
 .main-nav ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
-
+ 
 .main-nav ul li {
     margin: 0 15px;
 }
-
+ 
 .main-nav ul li a {
     text-decoration: none;
     color: #000000;
     font-size: 1.1em;
     transition: color 0.3s ease;
 }
-
+ 
 .main-nav ul li a:hover {
     color: #808080;
 }
-
+ 
 /* Hero Section */
 .hero {
     background: url('imagem.png') no-repeat center center/cover;
@@ -86,19 +85,19 @@ body {
     height: 100vh;
     animation: parallaxScroll 10s infinite linear;
 }
-
+ 
 .hero h2 {
     font-size: 3.5em;
     margin-bottom: 20px;
     animation: slideIn 1.5s ease-out;
 }
-
+ 
 .hero p {
     font-size: 1.4em;
     margin-bottom: 30px;
     animation: slideIn 2s ease-out;
 }
-
+ 
 .cta-btn {
     background-color: #ffffff;
     color: #000000;
@@ -110,97 +109,116 @@ body {
     transition: background-color 0.3s, transform 0.3s;
     animation: pulse 2s infinite;
 }
-
+ 
 .cta-btn:hover {
     background-color: #919191;
     transform: scale(1.1);
 }
-
+ 
 /* Services Section */
 .services {
     background-color: #fff;
     padding: 80px 0;
     text-align: center;
 }
-
+ 
 .services h3 {
     font-size: 3em;
     margin-bottom: 50px;
     animation: fadeIn 1.5s ease-in-out;
 }
-
+ 
 .service-box {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
-.service-item {
+ 
+.service-item{
     width: 30%;
     background-color: rgba(181, 199, 214, 1);
     border-radius: 20px;
     padding: 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    animation: fadeIn 2s ease-in-out;
+    opacity: 0; /* Inicia invisível */
+    transform: translateX(-100px); /* Inicia fora da tela à esquerda */
+    transition: transform 0.35s ease, opacity 0.35s ease; /* Transição suave */
 }
-
-.service-item:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+ 
+.service-item.animate {
+    opacity: 1; /* Torna visível */
+    transform: translateX(0); /* Move para a posição final */
 }
-
+ 
+ 
 .service-item h4 {
     font-size: 1.8em;
     color: #00bfa5;
     margin-bottom: 20px;
 }
-
+ 
 .service-item p {
     color: #ffffff;
     font-size: 1.1em;
     line-height: 1.6;
 }
-
+ 
 /* MISSÂO */
 .mission {
-    background-color: #ffffff; 
-    padding: 250px 20px;
+    background-color: #ffffff;
+    padding: 50px 20px;
 }
-
+ 
 .misON {
-    margin: 0 auto; 
-    padding: 20px 0; 
+    margin: 0 auto;
+    padding: 20px 0;
+    opacity: 0; /* Inicia invisível */
+    transform: translateX(100px); /* Inicia fora da tela à esquerda */
+    transition: transform 0.35s ease, opacity 0.35s ease; /* Transição suave */
 }
-
+ 
+.misON.animate {
+    opacity: 1; /* Torna visível */
+    transform: translateX(0);
+}
 .titMis {
     font-size: 2em;
-    color: #333333; 
+    color: #333333;
     font-weight: 600;
     margin-bottom: 15px;
-    text-align: center;
+    text-align: left;
 }
-
+ 
 .txtMis {
     font-size: 1.2em;
     color: #555555;
     margin-bottom: 10px;
-    text-align: left; 
+    text-align: left;
 }
-
+ 
 .txtMis2 {
     font-size: 1em;
     color: #666666;
-    line-height: 1.6; 
-    text-align: left; 
+    line-height: 1.6;
+    text-align: left;
 }
-
+ 
 .misON2 {
-    display: flex; 
-    align-items: flex-start; 
-    margin-top: 150px auto; 
+    display: flex;
+    align-items: flex-start;
+    /*margin: 20px auto;*/
+    width: 80vw;
+    opacity: 0; /* Inicia invisível */
+    transform: translateX(-100px); /* Inicia fora da tela à esquerda */
+    transition: transform 0.35s ease, opacity 0.35s ease; /* Transição suave */
 }
-
+ 
+.misON2.animate {
+    opacity: 1; /* Torna visível */
+    transform: translateX(0); /* Move para a posição final */
+}
+ 
+ 
 .imgMis {
     width: 471px;
     height: 471px;
@@ -208,97 +226,104 @@ body {
     object-fit: cover;
     margin-right: 100px;
 }
-
+ 
 .txtMis3 {
-    flex: 1; 
+    font-size: 1.2em;
+    margin-top: 125px;
+    flex: 1;
 }
-
+ 
 .tilMis {
-    margin-top: 120px;
-    font-size: 1.8em; 
-    color: #333; 
-    margin-bottom: 10px; 
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
 }
-
+ 
 .pTxt {
-    font-size: 1em; 
-    color: #666; 
-    line-height: 1.6; 
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
 }
-
+ 
 /*AI*/
 .ourAI {
-    background-color: #ffffff; 
-    padding: 50px 20px; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: flex-start; 
+    background-color: #ffffff;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    opacity: 0; /* Inicia invisível */
+    transform: translateX(100px); /* Inicia fora da tela à esquerda */
+    transition: transform 0.35s ease, opacity 0.35s ease; /* Transição suave */
 }
-
+ 
+.ourAI.animate{
+    background-color: #ffffff;
+    opacity: 1; /* Torna visível */
+    transform: translateX(0); /* Move para a posição final */
+}
 .ai {
-    flex: 1; 
-    margin-right: 20px; 
+    flex: 1;
+    margin-right: 20px;
 }
-
+ 
 .titAi {
-    font-size: 2em; 
-    color: #333333; 
-    font-weight: 600; 
-    margin-bottom: 15px; 
-    text-align: left; 
+    font-size: 2em;
+    color: #333333;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: left;
 }
-
+ 
 .txtAIz {
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
 }
-
+ 
 .txtAi {
-    font-size: 1.2em; 
-    color: #555555; 
-    margin-bottom: 10px; 
+    font-size: 1.2em;
+    color: #555555;
+    margin-bottom: 10px;
     max-width: 573px; /* Adicionado para limitar a largura */
 }
-
+ 
 .txtAi2 {
-    font-size: 1em; 
-    color: #666666; 
-    line-height: 1.6; 
+    font-size: 1em;
+    color: #666666;
+    line-height: 1.6;
     max-width: 572px; /* Adicionado para limitar a largura */
 }
-
+ 
 .btnAI {
-    font-size: 1.3em;
-    font-family: 'Poppins', sans-serif;
-    animation: pulse 2s infinite;
-    width: 215px; 
-    height: 80px; 
-    background: #3494AD; 
+    margin-top: 53px;
+    width: 190px;
+    height: 64px;
+    background: #3494AD;
     border-radius: 40px; /* Ajuste do border-radius para ficar mais sutil */
     color: white; /* Cor do texto */
     border: none; /* Remover borda padrão */
     cursor: pointer; /* Cursor pointer para indicar clicável */
     transition: background-color 0.3s; /* Efeito de transição */
 }
-
+ 
 .btnAI:hover {
     background: #287f9c; /* Efeito hover */
 }
-
+ 
 .imgAIc {
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
 }
-
+ 
 .imgAi {
     width: 100%; /* Ajustar para ocupar 100% do espaço disponível */
     max-width: 471px; /* Tamanho máximo */
     height: auto; /* Altura automática para manter a proporção */
     border-radius: 15%; /* Arredondamento de bordas */
 }
-
-
-
+ 
+ 
+ 
 /* Footer */
 .main-footer {
     background-color: #222;
@@ -307,13 +332,13 @@ body {
     padding: 20px 0;
     width: 100%;
 }
-
+ 
 .main-footer p {
     margin: 0;
     font-size: 1em;
     color: #bbb;
 }
-
+ 
 /* Animations */
 @keyframes fadeIn {
     0% {
@@ -323,7 +348,7 @@ body {
         opacity: 1;
     }
 }
-
+ 
 @keyframes slideIn {
     0% {
         transform: translateY(-100px);
@@ -334,7 +359,7 @@ body {
         opacity: 1;
     }
 }
-
+ 
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -346,7 +371,7 @@ body {
         transform: scale(1);
     }
 }
-
+ 
 @keyframes parallaxScroll {
     0% {
         background-position: 0% 0%;
@@ -355,3 +380,4 @@ body {
         background-position: 100% 100%;
     }
 }
+ 
