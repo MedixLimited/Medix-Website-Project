@@ -167,7 +167,7 @@ body {
 }
 
 
-/* MISSÂO1 */
+/* MISSÂO1 
 .mission {
     background-color: #ffffff; 
 }
@@ -178,8 +178,8 @@ body {
 
 .misON {
     margin-top: 100px;
-    transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out; /* Transição mais rápida e suave */
-    background-image: url(ondinha.png);
+    transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+    background-image: url(Ondinha.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -189,7 +189,7 @@ body {
 
 
 .misON.animate {
-    opacity: 1; /* Torna visível */
+    opacity: 1;
     transform: translateX(0);
 }
 
@@ -214,8 +214,88 @@ body {
     line-height: 1.6;
     text-align: left;
 }
-
+*/
  
+----------------------------
+/*teste*/
+.titMis{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: fixed;
+    z-index: -1;
+
+    font-size: 40px;
+    color: #000000;
+}
+
+.txtMis{
+    padding: 100px;
+    background-color: #ffffff;
+}
+
+.txtMis h1{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.txtMis p{
+    font-size: 1.2em;
+}
+
+section.ondas-box{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.onda{
+    width: 100%;
+    height: 725px;
+    position: absolute;
+    bottom: 0;
+    background-image: url(wave2.png);
+    background-size: 1000px 100px;
+
+    animation: ondaAnimada 5s ease-in-out infinite alternate;
+}
+
+@keyframes ondaAnimada {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+#onda1{
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400;
+}
+#onda2{
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px;
+}
+#onda3{
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+}
+#onda4{
+    z-index: 997;
+    opacity: 0.8;
+    background-position-x: 100px;
+}
+
+
+
 /* MISSÂO2 */
 .mission2 {
     background-color: #ffffff;
@@ -229,7 +309,7 @@ body {
     opacity: 0; /* Inicia invisível */
     transform: translateX(-100px); /* Inicia fora da tela à esquerda */
     transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out; /* Transição mais rápida e suave */
-    margin-top: 300px;
+    margin-top: -60px;
 }
 
 .misON2.animate {
