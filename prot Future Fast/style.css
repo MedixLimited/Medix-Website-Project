@@ -82,7 +82,7 @@ body {
     text-align: center;
     padding: 240px 0;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
-    height: 104vh;
+    height: 115vh;
     animation: parallaxScroll 10s infinite linear;
 }
  
@@ -235,33 +235,38 @@ body {
 
 .txtMis{
     padding: 100px;
-    background-color: #ffffff;
+    background: rgb(109,143,170);
+    background: linear-gradient(180deg, rgba(109,143,170,1) 0%, rgba(109,143,170,1) 67%, rgba(255,255,255,1) 100%);
 }
 
 .txtMis h1{
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
+    color: white;
+    margin-top: -71px;
 }
 
 .txtMis p{
-    font-size: 1.2em;
+    font-size: 1.6em;
+    color: white;
+    display: flex;
+    width: 1000px;
 }
 
-section.ondas-box{
+.ondas-box{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 500px;
 }
 
 .onda{
+    margin-top: 100px;
     width: 100%;
-    height: 725px;
+    height: 100px;
     position: absolute;
-    bottom: 0;
-    background-image: url(wave2.png);
+    bottom: 498px;
+    background-image: url(waves3.png);
     background-size: 1000px 100px;
-    /*background-repeat: no-repeat;*/
-
     animation: ondaAnimada 5s ease-in-out infinite alternate;
 }
 
