@@ -260,6 +260,7 @@ section.ondas-box{
     bottom: 0;
     background-image: url(wave2.png);
     background-size: 1000px 100px;
+    /*background-repeat: no-repeat;*/
 
     animation: ondaAnimada 5s ease-in-out infinite alternate;
 }
