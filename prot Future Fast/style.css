@@ -138,7 +138,7 @@ body {
     flex: 0 0 auto; /* Impede que os cards encolham */
     width: 250px; /* Largura fixa dos cards */
     margin: 0 15px; /* Espaçamento entre os cards */
-    background-color: rgba(181, 199, 214, 1);
+    background-color: rgba(122, 161, 187, 1);
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
