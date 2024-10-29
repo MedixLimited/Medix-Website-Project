@@ -136,11 +136,11 @@ body {
 
 .about-card {
     flex: 0 0 auto; /* Impede que os cards encolham */
-    width: 250px; /* Largura fixa dos cards */
+    width: 222px; /* Largura fixa dos cards */
     margin: 0 15px; /* Espaçamento entre os cards */
     background-color: rgba(122, 161, 187, 1);
     border-radius: 15px;
-    padding: 20px;
+    padding: 14px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
 }
