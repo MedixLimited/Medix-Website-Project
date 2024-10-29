@@ -77,13 +77,13 @@ body {
  
 /* Hero Section */
 .hero {
-    background: url('Design\ sem\ nome.png') no-repeat center center/cover;
+    background: url('imgs/Design sem nome.png') no-repeat center center/cover; /* Atualizado */
     color: #fff;
     text-align: center;
     padding: 240px 0;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
     height: 115vh;
-    animation: parallaxScroll 10s infinite linear;
+    animation: parallaxScroll 5s infinite linear;
 }
  
 .hero h2 {
@@ -130,7 +130,7 @@ body {
 .about-container {
     display: flex;
     overflow-x: auto; /* Habilita o scroll horizontal */
-    padding: 20px;
+    padding: 18px;
     scrollbar-width: thin; /* Para navegadores compatíveis */
 }
 
@@ -235,15 +235,14 @@ body {
 
 .txtMis{
     padding: 100px;
-    background: rgb(109,143,170);
-    background: linear-gradient(180deg, rgba(109,143,170,1) 0%, rgba(109,143,170,1) 67%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(109,143,170,1) 0%, rgba(109,143,170,1) 60%, rgba(255,255,255,1) 100%);
 }
 
 .txtMis h1{
     font-size: 2.5em;
     margin-bottom: 20px;
     color: white;
-    margin-top: -71px;
+    margin-top: -95px;
 }
 
 .txtMis p{
@@ -259,13 +258,13 @@ body {
     height: 500px;
 }
 
-.onda{
+.onda {
     margin-top: 100px;
     width: 100%;
     height: 100px;
     position: absolute;
     bottom: 498px;
-    background-image: url(waves3.png);
+    background-image: url('imgs/waves3.png'); /* Atualizado */
     background-size: 1000px 100px;
     animation: ondaAnimada 5s ease-in-out infinite alternate;
 }
@@ -358,15 +357,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    opacity: 0; /* Inicia invisível */
-    transform: translateX(100px); /* Inicia fora da tela à direita */
-    transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out; /* Transição mais rápida e suave */
+    /*opacity: 0; 
+    transform: translateX(0px); 
+    transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;*/
 }
 
-.ourAI.animate {
-    opacity: 1; /* Torna visível */
-    transform: translateX(0); /* Move para a posição final */
-}
+/*.ourAI.animate {
+    opacity: 1; /* Torna visível 
+    transform: translateX(0); /* Move para a posição final 
+}*/
 .ai {
     flex: 1;
     margin-right: 20px;
@@ -401,18 +400,29 @@ body {
  
 .btnAI {
     margin-top: 53px;
-    width: 190px;
+    width: 560px;
     height: 64px;
-    background: #3494AD;
-    border-radius: 40px; /* Ajuste do border-radius para ficar mais sutil */
-    color: white; /* Cor do texto */
-    border: none; /* Remover borda padrão */
-    cursor: pointer; /* Cursor pointer para indicar clicável */
-    transition: background-color 0.3s; /* Efeito de transição */
+    background: #7aa1bb;
+    border-radius: 14px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(139, 139, 139, 0.4);
+    transition: transform 0.3s;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
- 
+
 .btnAI:hover {
-    background: #287f9c; /* Efeito hover */
+    transform: scale(1.05);
+    background-color: rgba(52, 148, 173, 1);
+}
+
+.btnAI:active {
+    transform: scale(0.95); /* Faz o botão "afundar" ao ser clicado */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
  
 .imgAIc {
@@ -465,6 +475,109 @@ body {
     transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
 }
 
+
+/* Lista */
+.todo-section {
+    background: url(imgs/back3.png);
+    padding: 90px 20px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.toDo {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#formProduto {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#formProduto input[type="text"] {
+    padding: 18px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 60%;
+    max-width: 300px;
+}
+
+#formProduto input[type="text"]:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+#formProduto button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color:  #7aa1bb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#formProduto button:hover {
+    background-color: #2874a6;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list li {
+    background-color: #ffffff;
+    color: #181818;
+    font-weight: bold;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.task-list li:hover {
+    transform: scale(1.02);
+}
+
+.task-list li span {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.task-list li button {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.task-list li button:first-child {
+    background-color: #16a085;
+    color: white;
+    margin-right: 8px;
+}
+
+.task-list li button:last-child {
+    background-color: #b95b51;
+    color: white;
+}
+
  
 /* Animations */
 @keyframes fadeIn {
@@ -478,7 +591,7 @@ body {
  
 @keyframes slideIn {
     0% {
-        transform: translateY(-50px); /* Movendo menos para começar */
+        transform: translateY(-2px); /* Movendo menos para começar */
         opacity: 0;
     }
     100% {
@@ -507,4 +620,3 @@ body {
         background-position: 100% 100%;
     }
 }
- 
