@@ -78,3 +78,32 @@ nav ul li a:hover {
 .twitter-button:hover {
     transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
 }
+
+
+.cta-btn {
+    display: inline-block;
+    background-color: rgba(122, 161, 187, 1); /* Verde */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+.cta-btn:hover {
+    background-color:rgb(149, 191, 219); /* Verde mais escuro */
+    transform: translateY(-2px);
+}
+
+.cta-btn:active {
+    transform: translateY(0);
+}
+
+.main-footer {
+    background-color: #343a40; /* Cinza escuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
