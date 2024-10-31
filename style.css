@@ -10,9 +10,10 @@ body {
     color: #333;
 }
 
-
-
-
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
 
 
 h1 {
@@ -193,7 +194,7 @@ h3 {
 
 .about-card {
     flex: 0 0 auto; /* Impede que os cards encolham */
-    width: 222px; /* Largura fixa dos cards */
+    width: 231px; /* Largura fixa dos cards */
     margin: 0 15px; /* Espaçamento entre os cards */
     background-color: rgba(122, 161, 187, 1);
     border-radius: 15px;
@@ -212,7 +213,7 @@ h3 {
 
 .about-card h4 {
     margin: 15px 0 10px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #333;
 }
 
@@ -444,23 +445,6 @@ h3 {
 
 
 /* Botão e GIF*/
-.testeAI {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 64px;
-    margin-top: 3px;
-    background: url(imgs/back3.png);
-}
-
-.gifAi {
-    width: 100%;
-    max-width: 560px;
-    height: auto;
-}
-
 .btnAI {
     width: 100%;
     max-width: 560px;
@@ -476,6 +460,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 24px;
 }
 
 .btnAI:hover {
@@ -487,6 +472,45 @@ h3 {
     transform: scale(0.95);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+.testeAI {
+    display: flex;
+    justify-content: space-between; /* Espaça os lados esquerdo e direito */
+    align-items: center; /* Alinha os itens no início */
+    padding: 64px;
+    margin-top: 3px;
+    background: url(imgs/back3.png);
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column; /* Organiza imagem e botão em coluna */
+    align-items: flex-start; /* Alinha à esquerda */
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column; /* Organiza título e texto em coluna */
+    align-items: flex-start; /* Alinha à esquerda */
+    max-width: 400px; /* Limita a largura do texto */
+}
+
+.tiltgifAI {
+    margin-bottom: 10px; /* Espaçamento entre o título e o texto */
+    font-size: 2em; /* Ajuste o tamanho conforme necessário */
+    color: #ffffff; /* Ajuste a cor se necessário */
+}
+
+.gifAi {
+    width: 100%;
+    max-width: 500px; /* Ajuste a largura da imagem se necessário */
+    height: auto;
+}
+
+.textgifAI {
+    color: #fdfdfd; /* Ajuste a cor do texto, se necessário */
+}
+
 
  
  
