@@ -100,6 +100,7 @@ h3 {
 
  
 .main-nav ul {
+    font-size: 19px;
     list-style: none;
     display: flex;
     margin: 0;
