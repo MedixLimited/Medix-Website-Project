@@ -42,13 +42,13 @@ function renderizarLista() {
 
         // Botão de edição
         const btnEditar = document.createElement('button');
-        btnEditar.style.backgroundColor = '#16a085';
+        btnEditar.style.backgroundColor = '#387977';
         btnEditar.textContent = 'Editar';
         btnEditar.onclick = () => editarProduto(index);
 
         // Botão de remoção
         const btnRemover = document.createElement('button');
-        btnRemover.style.backgroundColor = '#e74c3c';
+        btnRemover.style.backgroundColor = '#4f5261';
         btnRemover.textContent = 'Remover';
         btnRemover.onclick = () => removerProduto(index);
 

@@ -220,7 +220,7 @@ h3 {
 
 
 .about-card p {
-    color: #555;
+    color: #ffffff;
 }
 
 
@@ -255,7 +255,7 @@ h3 {
 
 .txtMis{
     align-content: start;
-    padding: 77px 100px;
+    padding: 50px 100px;
     margin-top: -80px;
     height:100% ;
     background: linear-gradient(180deg, rgba(109,143,170,1) 0%, rgba(109,143,170,1) 60%, rgba(255,255,255,1) 100%);
@@ -337,21 +337,7 @@ h3 {
     padding: 50px 20px;
 }
  
-.misON2 {
-    display: flex;
-    align-items: flex-start;
-    width: 93vw;
-    opacity: 0; /* Inicia invisível */
-    transform: translateX(-100px); /* Inicia fora da tela à esquerda */
-    transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out; /* Transição mais rápida e suave */
-    margin-top: -60px;
-}
 
-
-.misON2.animate {
-    opacity: 1; /* Torna visível */
-    transform: translateX(0); /* Move para a posição final */
-}
  
  
 .imgMis {
@@ -365,7 +351,7 @@ h3 {
  
 .txtMis3 {
     font-size: 1.5em;
-    margin-top: 125px;
+    margin-top: 60px;
     flex: 1;
 }
  
@@ -382,6 +368,22 @@ h3 {
 }
  
 /*AI*/
+.misON2 {
+    display: flex;
+    align-items: flex-start;
+    width: 93vw;
+    opacity: 0; /* Inicia invisível */
+    transform: translateX(-100px); /* Inicia fora da tela à esquerda */
+    transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out; /* Transição mais rápida e suave */
+    margin-top: -60px;
+}
+
+
+.misON2.animate {
+    opacity: 1; /* Torna visível */
+    transform: translateX(0); /* Move para a posição final */
+}
+
 .ourAI {
     background-color: #ffffff;
     padding: 50px 37px;
@@ -389,7 +391,7 @@ h3 {
     justify-content: space-between;
     align-items: flex-start;
     opacity: 0;
-    transform: translateX(0px);
+    transform: translateX(100px);
     transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
 }
 
@@ -667,14 +669,14 @@ h3 {
 
 
 .task-list li button:first-child {
-    background-color: #16a085;
+    background-color: #387977;
     color: white;
     margin-right: 8px;
 }
 
 
 .task-list li button:last-child {
-    background-color: #b95b51;
+    background-color: #4f5261;
     color: white;
 }
 
