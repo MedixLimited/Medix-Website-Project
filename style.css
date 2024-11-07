@@ -520,6 +520,7 @@ h3 {
     width: 100%;
     max-width: 500px; /* Ajuste a largura da imagem se necessário */
     height: auto;
+    border-radius: 10px;
 }
 
 .textgifAI {
