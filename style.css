@@ -230,18 +230,6 @@ h3 {
     transform: scale(1.05);
 }
 
-.BtnCima{
-
-    margin-left: 1000px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: none;
-    background-color: #7aa1bb;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
 
  
@@ -318,22 +306,22 @@ h3 {
 
 
 #onda1{
-    z-index: 1000;
+    z-index: 503;
     opacity: 1;
     background-position-x: 400;
 }
 #onda2{
-    z-index: 999;
+    z-index: 502;
     opacity: 0.5;
     background-position-x: 300px;
 }
 #onda3{
-    z-index: 998;
+    z-index: 501;
     opacity: 0.2;
     background-position-x: 200px;
 }
 #onda4{
-    z-index: 997;
+    z-index: 500;
     opacity: 0.8;
     background-position-x: 100px;
 }
@@ -739,4 +727,23 @@ h3 {
     100% {
         background-position-x: 0%;
     }
+}
+
+
+  .scroll-to-top{
+	position: fixed;
+	bottom: 30px;
+	right: 15px;
+	width: 50px;
+	height: 50px;
+    background-color: #8cabbe;
+    border-radius: 30%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.scroll-to-top img{
+    width: 30px;
 }

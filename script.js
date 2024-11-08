@@ -90,19 +90,85 @@ function editarProduto(index) {
 
 
 
-// updated from Onur Gumus's nice improvements here
-// https://codepen.io/onurgumus/pen/LYKwzbe
 
-document.documentElement.classList.toggle('light-mode')
 
-function toggleDarkMode() {
-  document.documentElement.classList.toggle('dark-mode')
-  document.documentElement.classList.toggle('light-mode')
-}
+/**class ColoredContainer extends React.Component {
+    render () {
+      let containerStyle = {
+        backgroundColor: this.props.color
+      }
+      return <div className="container" style={containerStyle}></div>
+    }
+  }
+  
+  class ScrollButton extends React.Component {
+    constructor() {
+      super();
+  
+      this.state = {
+          intervalId: 0
+      };
+    }
+    
+    scrollStep() {
+      if (window.pageYOffset === 0) {
+          clearInterval(this.state.intervalId);
+      }
+      window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
+    }
+    
+    scrollToTop() {
+      let intervalId = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
+      this.setState({ intervalId: intervalId });
+    }
+    
+    render () {
+        return <button title='Back to top' className='scroll' 
+                 onClick={ () => { this.scrollToTop(); }}>
+                  <span className='arrow-up glyphicon glyphicon-chevron-up'></span>
+                </button>;
+     }
+  } 
+  
+  class ScrollApp extends React.Component {
+    constructor() {
+      super();
+      
+      this.state = {
+        colors: ["#044747", "#079191", "#38adad", "#90e3e3", "#d5f7f7"]
+      }
+    }
+    
+    render () {
+      return <div className="long">
+                {
+                  this.state.colors.map(function(color) {
+                      return <ColoredContainer color={color}/>
+                  })
+                }
+                <ScrollButton scrollStepInPx="50" delayInMs="16.66"/>
+             </div>
+    }
+  }
+  /*
+   * Render the ScrollApp component into the div with the id 'app'
+   
+  React.render(<ScrollApp/>, document.getElementById('app'));*/
 
-demo.onclick = event => {
-  if (document.startViewTransition)
-    document.startViewTransition(() => toggleDarkMode())
-  else 
-    toggleDarkMode()
-}
+
+  $(document).ready(function() {	
+    var offset = 300;
+    var duration = 400;
+    jQuery(window).on('scroll', function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.scroll-to-top').addClass('active-arrow');
+        } else {
+            jQuery('.scroll-to-top').removeClass('active-arrow');
+        }
+    });				
+    jQuery('.scroll-to-top').on('click', function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+})
